@@ -1,0 +1,4 @@
+# GitHub Pages Jekyll configuration
+# Include the .well-known directory (needed for Apple AASA file)
+include:
+  - .well-known
