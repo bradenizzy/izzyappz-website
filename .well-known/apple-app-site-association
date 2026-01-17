@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TL33C658K6.com.izzyappz.handsapp",
+        "paths": ["/r/*"]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["TL33C658K6.com.izzyappz.handsapp"]
+  }
+}
