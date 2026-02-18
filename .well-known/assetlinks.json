@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.izzyappz.hands",
+    "sha256_cert_fingerprints": ["F0:4C:5C:B8:39:E1:CA:5A:5F:54:E7:65:C8:A1:5D:35:D0:31:6C:95:CC:B1:1C:1F:4D:74:C0:FF:AA:28:EE:D3"]
+  }
+}]
