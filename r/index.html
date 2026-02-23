@@ -214,7 +214,7 @@
         </div>
         
         <a href="https://apps.apple.com/us/app/hands-ai-chef/id6751565207" class="download-btn" id="downloadBtn">
-            Download on App Store
+            Download App
         </a>
         
         <div class="note">
@@ -225,6 +225,28 @@
     <div class="copied-toast" id="toast">Code copied to clipboard!</div>
     
     <script>
+        // Store URLs
+        const APP_STORE_URL = 'https://apps.apple.com/us/app/hands-ai-chef/id6751565207';
+        const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.izzyappz.hands';
+        
+        // Detect platform
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        const isAndroid = /android/i.test(userAgent);
+        const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+        
+        // Update download button based on platform
+        const downloadBtn = document.getElementById('downloadBtn');
+        if (isAndroid) {
+            downloadBtn.href = PLAY_STORE_URL;
+            downloadBtn.textContent = 'Download on Google Play';
+        } else if (isIOS) {
+            downloadBtn.href = APP_STORE_URL;
+            downloadBtn.textContent = 'Download on App Store';
+        } else {
+            downloadBtn.href = APP_STORE_URL;
+            downloadBtn.textContent = 'Download on App Store';
+        }
+        
         // Extract referral code from URL
         // URL format: /r/ABC123 or /r/ABC123/
         const path = window.location.pathname;
